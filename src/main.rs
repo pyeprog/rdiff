@@ -22,7 +22,7 @@ fn main() {
     print_comparing_lines(&comparing_lines);
 }
 
-fn get_args() -> ArgMatches {
+fn get_args() -> ArgMatches<'static> {
     App::new("rdiff")
         .version("v1.0")
         .author("written by: Pye<pyeprog@foxmail.com>")
