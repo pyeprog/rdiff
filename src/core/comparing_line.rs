@@ -96,8 +96,8 @@ mod tests {
         assert_eq!(3, left.len());
         assert_eq!(3, right.len());
 
-        assert!(lines2.iter().all(|l| l.is_empty()));
-        assert!(!lines1.iter().any(|l| l.is_empty()))
+        assert!(right.iter().all(|l| l.is_empty()));
+        assert!(!left.iter().any(|l| l.is_empty()))
     }
 
     #[test]
